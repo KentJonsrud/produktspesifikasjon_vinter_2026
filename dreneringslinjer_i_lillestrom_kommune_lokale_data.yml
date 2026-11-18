@@ -2,10 +2,11 @@ metadataId: aaf53e4a-52d7-40e6-a3fd-186ed1228625
 output_directory: produktspesifikasjon
 product_slug: dreneringslinjer_i_lillestrom_kommune_lokale_data
 updated: '2026-11-18'
+outputs: jsonschema,xsd
 scopes:
 - name: Ny datakilde
-  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%202/Stedsnavn.xml
+  url: https://sosi.geonorge.no/svn/SOSI/SOSI%20Del%203/Statens%20kartverk/Stedsnavn.xml
   generator: xmi
   description: ''
-  package: EAPK_BFC55804_2F4C_4f5f_8B03_47ECFCDAF34D
-  package_name: Stedsnavn-5.0-Utkast-2024-01-29
+  package: EAPK_65550E38_5AF6_48d6_B152_724A4526ED48
+  package_name: Stedsnavn
