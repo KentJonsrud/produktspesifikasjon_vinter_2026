@@ -1,0 +1,85 @@
+@startuml
+' For wide diagrams, render with: plantuml -DPLANTUML_LIMIT_SIZE=16384 ...
+' The 'scale max' directive below caps the rendered output to prevent the
+' default PlantUML 4096px size limit from cropping the diagram.
+scale max 4000*4000
+
+title Dreneringslinjer i Lillestrøm Kommune - lokale data - Ny datakilde - Objekttyper
+
+skinparam backgroundColor #F5F5F5
+skinparam shadowing false
+skinparam RoundCorner 6
+skinparam ArrowColor #6C8198
+skinparam wrapWidth 200
+skinparam class {
+  BackgroundColor #FBF2E8
+  BorderColor #9C8578
+  FontColor #2D201A
+  HeaderBackgroundColor #EFE1D6
+  HeaderFontColor #2D201A
+  AttributeIconSize 0
+}
+skinparam note {
+  BackgroundColor #FFFFFF
+  BorderColor #6C8198
+  FontColor #2D201A
+}
+skinparam stereotypeCBackgroundColor #EAD9CE
+skinparam stereotypeCBorderColor #9C8578
+skinparam stereotypeCFontColor #2D201A
+
+package "Objekttyper" {
+
+  class "Vedtaksområde" as Vedtaksomr_de <<featureType>> {
+    + område [1] : CharacterString
+    + oppdatertdato [1] : Date
+    + polygon [1] : GM_Surface
+    + registrertdato [1] : Date
+  }
+
+  class Sted <<featureType>> {
+    + land [1] : LandKode
+    + navneobjekthovedgruppe [1] : Navneobjekthovedgruppe
+    + navneobjektgruppe [1] : Navneobjektgruppe
+    + navneobjekttype [1] : Navneobjekttype
+    + posisjon [1] : GM_Object
+    + sortering [1] : Sortering
+    + stedstatus [1] : StedstatusKode
+    + språkprioritering [0..1] : SpråkprioriteringKode
+    + tilleggsopplysninger [0..*] : Tilleggsopplysning
+    + stedsnummer [1] : Integer
+    + vedtaksmyndighet [1] : VedtaksmyndighetKode
+    + kommune [0..*] : Kommune
+  }
+
+  class Sortering <<dataType>> {
+    + sortering1Kode [1] : Sortering1Kode
+    + sortering2Kode [1] : Sortering2Kode
+  }
+
+  class Tilleggsopplysning <<dataType>> {
+    + eksterneOpplysninger [0..1] : URI
+    + oppdateringsdato [1] : Date
+    + registreringsdato [1] : Date
+    + tekst [0..*] : CharacterString
+    + tilleggsopplysningstype [1] : TilleggsopplysningtypeKode
+  }
+
+  class Kommune <<dataType>> {
+    + kommunenummer [1] : Kommunenummer
+    + kommunenavn [1] : CharacterString
+    + fylkesnummer [1] : CharacterString
+    + fylkesnavn [1] : CharacterString
+  }
+
+  class Stedsnavn {
+  }
+
+  class Matrikkelreferanse {
+  }
+}
+
+  Sted --> Stedsnavn : stedsnavn [1..*]
+  Sted --> Matrikkelreferanse : matrikkelreferanse [0..1]
+
+@enduml

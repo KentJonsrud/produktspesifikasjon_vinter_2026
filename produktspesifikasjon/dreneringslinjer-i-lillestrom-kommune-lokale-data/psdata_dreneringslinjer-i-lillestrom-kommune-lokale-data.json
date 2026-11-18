@@ -1,0 +1,150 @@
+{
+  "overview": "Denne produktspesifikasjonen er autogenerert fra metadata i Geonorge og datamodell fra SOSI modellregister og/eller OGC API Features. Noe ekstra informasjon kan ha blitt lagt til gjennom manuell prosess. Produktspesifikasjonen er i henhold til standarden: 'Geografisk informasjon - Dataproduktspesifikasjoner' (ISO19131:2022)",
+  "title": "Dreneringslinjer i Lillestrøm Kommune - lokale data",
+  "format": "text/html",
+  "date": {
+    "creation": "2023-06-07",
+    "revision": "2023-06-07"
+  },
+  "language": "nor",
+  "contact": {
+    "organizationName": "Lillestrøm kommune",
+    "logo": "https://register.geonorge.no/data/organizations/820710592_lillestrom_liten.jpg",
+    "electronicMailAddress": "Geodata@lillestrom.kommune.no",
+    "role": "owner"
+  },
+  "identificationSection": {
+    "title": "Dreneringslinjer i Lillestrøm Kommune - lokale data",
+    "abstract": "Dreneringslinjer i Lillestrøm er et datasett som viser modellerte dreneringslinjer. Datasettet viser hvor i terrenget det vil dannes nye dreneringslinjer. Det er ikke tatt hensyn til å stikkrenner og andre kritiske punkt i modelleringen. Datasettet inneholder dreneringslinjer hvor dreneringsarealet er større enn 10.000 m2. Eksisterende FKB-Vann er brent ned i terrengmodellen før beregning, så FKB-Vann har en ekstra vekt ved beregning av disse dreneringslinjene. Data er klipt ut fra Kartverkets datasett \"Dreneringslinjer i Oslo og Viken\"",
+    "uniqueId": "aaf53e4a-52d7-40e6-a3fd-186ed1228625",
+    "keyword": [
+      "Det offentlige kartgrunnlaget",
+      "fellesDatakatalog",
+      "Samfunnssikkerhet"
+    ],
+    "restriction": {
+      "legalConstraints": {
+        "accessConstraints": "Åpne data",
+        "useConstraints": "Lisens",
+        "license": "No conditions apply to access and use",
+        "licenseUrl": "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply"
+      }
+    },
+    "contact": [
+      {
+        "organizationName": "Lillestrøm kommune",
+        "electronicMailAddress": "Geodata@lillestrom.kommune.no",
+        "role": "owner"
+      },
+      {
+        "organizationName": "Lillestrøm kommune",
+        "electronicMailAddress": "Geodata@lillestrom.kommune.no",
+        "role": "pointOfContact"
+      },
+      {
+        "organizationName": "Lillestrøm kommune",
+        "electronicMailAddress": "Geodata@lillestrom.kommune.no",
+        "role": "publisher"
+      }
+    ],
+    "maintenance": "Ukjent",
+    "extent": {
+      "geographicElement": {
+        "westBoundLongitude": "10.933734",
+        "eastBoundLongitude": "11.439506",
+        "southBoundLatitude": "59.75385",
+        "northBoundLatitude": "60.077247"
+      },
+      "geographicDescription": [
+        "Lillestrøm kommune"
+      ],
+      "temporalElement": {
+        "timePeriod": {
+          "beginPosition": "2023-06-07",
+          "endPosition": "2023-06-07"
+        }
+      }
+    },
+    "date": {
+      "creation": "2023-06-07",
+      "publication": "2023-06-07",
+      "revision": "2023-06-07"
+    },
+    "language": "nor"
+  },
+  "scopeSection": [
+    {
+      "specificationScope": {
+        "scopeIdentification": "Hele datasettet",
+        "level": "dataset",
+        "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "Ny datakilde",
+        "level": "dataset"
+      }
+    }
+  ],
+  "dataQualitySection": {
+    "scope": {
+      "level": "dataset"
+    }
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Ukjent"
+  },
+  "deliverySection": [
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Geonorge filnedlastning",
+          "deliveryService": {
+            "serviceEndpoint": "https://nedlasting.geonorge.no/geonorge/kommunaleDokData/aaf53e4a-52d7-40e6-a3fd-186ed1228625.zip",
+            "serviceProperty": {
+              "type": "Geonorge filnedlastning",
+              "value": "GEONORGE:FILEDOWNLOAD"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "metadataSection": {
+    "metadataStandard": "ISO19115:Norsk versjon",
+    "metadataStandardVersion": "2003",
+    "metadataDate": "2023-11-15",
+    "language": "nor",
+    "contact": {
+      "organizationName": "Lillestrøm kommune",
+      "logo": "https://register.geonorge.no/data/organizations/820710592_lillestrom_liten.jpg",
+      "electronicMailAddress": "Geodata@lillestrom.kommune.no",
+      "role": "pointOfContact"
+    },
+    "metadataIdentifier": {
+      "authority": "Geonorge",
+      "code": "aaf53e4a-52d7-40e6-a3fd-186ed1228625",
+      "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
+      "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/aaf53e4a-52d7-40e6-a3fd-186ed1228625"
+    }
+  },
+  "chapterAutofill": {
+    "om_spesifikasjonen": 8,
+    "om_produktet": 112,
+    "formaal": 0,
+    "bruksomraade": 0,
+    "omfang": 25,
+    "datainnhold_og_struktur": 0,
+    "referansesystem": 0,
+    "datakvalitet": 1,
+    "datafangst_og_produksjon": 0,
+    "vedlikehold": 1,
+    "presentasjon": 0,
+    "leveranse": 6,
+    "metadata": 14,
+    "tilleggsinformasjon": 0,
+    "datamodell": 4767
+  },
+  "specificationContact": "Lillestrøm kommune, [Geodata@lillestrom.kommune.no](mailto:Geodata@lillestrom.kommune.no)"
+}
