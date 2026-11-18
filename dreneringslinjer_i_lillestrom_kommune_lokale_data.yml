@@ -1,0 +1,11 @@
+metadataId: aaf53e4a-52d7-40e6-a3fd-186ed1228625
+output_directory: produktspesifikasjon
+product_slug: dreneringslinjer_i_lillestrom_kommune_lokale_data
+updated: '2026-11-18'
+scopes:
+- name: Ny datakilde
+  url: https://sosi.geonorge.no/svn/SOSI/Andre%20viktige%20komponenter/NVDB/NVDB%20Datakatalogen.xml
+  generator: xmi
+  description: ''
+  package: EAPK_650850A0_A1D3_451c_B1BF_4C21C46ED6DD
+  package_name: StikkrenneKulvert
